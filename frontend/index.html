@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Dev Searcher</title>
+</head>
+<body>
+  <main role="main">
+    <header>
+      <img src="./imgs/Logo.svg" class="logo" alt="Logo">
+    </header>
+
+    <section class="filter-sec">
+
+      <div class="search-bar">
+        <img src="./imgs/person.svg" class="person mr-3">
+        <input type="text" placeholder="Ex: Luciano Nunes" class="search form-control mx-auto" style="min-width: 37vw;" id="nameInput">  
+      </div>
+
+      <div class="filters">
+        <div class="mb-4">
+          <input type="checkbox" class="search check" id="java" name="Java" checked>
+          <i for="Java" class="fab fa-2x fa-java pl-ico mr-4"></i>
+    
+          <input type="checkbox" class="search check" id="javascript" name="JavaScript" checked>
+          <i class="fab fa-2x fa-js pl-ico mr-4"></i>
+    
+          <input type="checkbox" class="search check" id="python" name="Python" checked>
+          <i class="fab fa-2x fa-python pl-ico mr-4"></i>
+        </div>
+    
+        <div>
+          <input type="radio" id="and" class="search" name="and-or" value="and">
+          <label id="and-label" for="and">E</label>
+          <input type="radio" id="or" class="search" name="and-or" value="or" checked>
+          <label id="or-label" for="or">OU</label>
+        </div>
+      </div>
+    </section>
+    
+    <div class="counter"></div>
+
+    <div class="container"></div>
+  </main>
+  
+
+  <script defer src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
