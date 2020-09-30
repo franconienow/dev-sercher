@@ -4,6 +4,16 @@ Projeto desenvolvido no Bootcamp Front-End do IGTI. A aplicação consome um obj
 
 ---
 
+## Technologies
+
+- JavaScript (ES6)
+- HTML
+- CSS
+- Bootstrap 4
+- FontsAwesome
+
+---
+
 <img src="screenshots\devscher_web.png"/>
 
 ---
