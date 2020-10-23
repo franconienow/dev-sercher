@@ -22,7 +22,7 @@ const initFunc = () => {
   const elements = document.querySelectorAll(".search");
   addEventListenerAll("input", elements);
 
-  fetchData();  
+  fetchData();
 };
 
 const toggleFillIcons = (input, icon) => {
@@ -138,11 +138,9 @@ function slugify(str)
     return str;
 };
 
-const fetchData = async () => {
-  const res = await fetch("http://localhost:3001/devs");
-  const data = await res.json();
+const fetchData = () => {
 
-  const mapedData = data.map((dev)=>{
+  const mapedData = Lista.map((dev)=>{
     return{
       slug: slugify(dev.name),
       name: dev.name,
@@ -151,7 +149,7 @@ const fetchData = async () => {
     }
   })
   devList = mapedData;
-  createElements(filterController(devList));
+  createElements(filterController(devList)); 
 };
 
 const createElements = (list) => { 
